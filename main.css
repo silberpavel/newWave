@@ -1,9 +1,9 @@
 body {
-	background: lightgreen;
+	background: rgb(131, 177, 131);
 }
  
 .block { 
-	background: lightyellow;
+	background: rgb(197, 197, 122);
 	margin: 5px;
 	width: 600px;
 	border: 1px solid grey;
@@ -13,5 +13,8 @@ body {
 }
 
 h1, h2 {
+	font-size: 1.8em;
 	text-align: center;
+	font-family: 'Lobster';
 }
+
