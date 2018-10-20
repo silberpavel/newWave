@@ -1,0 +1,17 @@
+body {
+	background: lightgreen;
+}
+ 
+.block { 
+	background: lightyellow;
+	margin: 5px;
+	width: 600px;
+	border: 1px solid grey;
+	padding: 5px;
+	text-align: justify;
+	border-radius: 15px;
+}
+
+h1, h2 {
+	text-align: center;
+}
