@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Mali|Pacifico');
+
 body {
 	background: rgb(131, 177, 131);
 }
@@ -10,6 +12,7 @@ body {
 	padding: 5px;
 	text-align: justify;
 	border-radius: 15px;
+
 }
 
 h1, h2, h3 {
@@ -20,4 +23,6 @@ h1, h2, h3 {
 
 p{
 	font-size: 1.5em;
+	font-family: 'Mali','Pacifico';
+
 }
