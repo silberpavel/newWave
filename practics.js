@@ -81,7 +81,35 @@ window.onload = function(){
 
     var myRes004 = arrayRunner(arr004, expo(2));
     document.write(myRes004);
+    document.write('<br>It\'s works! But I do not know how ....<br><hr>');
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    document.write('<img src="img/carrying_explanation.png">');
+    document.write('<br><h2>One more simple example...</h2>');
+
+
+    var doin = 'running'
+    function newWords(myFunc) {
+        return myFunc(doin);
+    }
+
+    function words(name) {
+        return function(doin){
+            return name +' is ' + doin;
+        }
+    }
     
+    var r = newWords(words('Mike'));
+    document.write(r);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
 
 
 
