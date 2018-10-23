@@ -100,8 +100,8 @@ window.onload = function(){
         }
     }
     
-    var r = newWords(words('Mike'));
-    document.write(r);
+    var r = newWords(words('Mike'));    
+    document.write(r);                  // Mike is running
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
