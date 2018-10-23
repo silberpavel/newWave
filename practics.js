@@ -118,10 +118,12 @@ console.info('This is example for info');
 
 console.group('This is example for group1');
     console.group('This is example for group2');    
-    console.group('GROUP3');    
-
-    console.group('This is example for group1');    
     console.groupEnd();
+    console.group('GROUP3');    
+    console.groupEnd();
+    console.group('This is example for group1'); 
+    console.groupEnd();   
+console.groupEnd();
 
 document.write('//<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
 
@@ -136,28 +138,55 @@ console.timeEnd('Timer1');
 
 document.write('//<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
 
-console.info('PROFILE IN CONSOOLE  => CREATES CHART OF CODE, to optimise!!!');
-console.profile('1');
-console.time('time2');
-for (let x = 0; x < 20000000; x++) {
-    var a = x / x
+// console.info('PROFILE IN CONSOOLE  => CREATES CHART OF CODE, to optimise!!!');
+// console.profile('1');
+// console.time('time2');
+// for (let x = 0; x < 20000000; x++) {
+//     var a = x / x
     
+// }
+// console.timeEnd('time2');
+// console.profileEnd('1');
+
+document.write('<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
+
+document.write('<br><h2>        ===============        TRY & CATCH          ===============        </h2><br>');
+document.write('<img src="img/try_catch.JPG">');
+document.write('<img src="img/try_catch2.JPG">');
+
+
+const ERROR_DIV_ZERO = 1;
+const ERROR_SHOULD_B = 2;
+
+function diva(a, b) {
+    try {
+        if (b === 0) {
+            throw new Error('You cannot devide by zero!');
+        }
+        if (b === undefined) {
+            throw new Error('You cannot be undefined!!');
+        }
+    } catch (e) {
+        console.error(e.message);
+    }
+    return a / b;
 }
-console.timeEnd('time2');
-console.profileEnd('1');
+
+console.log(diva(2, 0));
+document.write('<br>');
+
+document.write('<br><h2>        ===============        Рекурсия          ===============        </h2><br>');
+
+// function fnR1()
 
 
 
 
 
 
-document.write('//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
 
 
-
-
-
-
+document.write('<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
 
 
 };
