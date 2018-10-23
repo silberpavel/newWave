@@ -105,8 +105,53 @@ window.onload = function(){
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+document.write('<br><h2>bind()</h2>');
+
+document.write('//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
+
+document.write('// Formatting  --> look to console');
+var ff = 'formating';
+
+console.log('This is example for \%s %s', ff);
+console.error('This is example for error');
+console.info('This is example for info');
+
+console.group('This is example for group1');
+    console.group('This is example for group2');    
+    console.group('GROUP3');    
+
+    console.group('This is example for group1');    
+    console.groupEnd();
+
+document.write('//<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
+
+console.info('This is example for TIMER  (CALCULATE OPERATION TIME OF CODE BLOCK');
+
+console.time('Timer1');
+for (let x = 0; x < 20000000; x++) {
+    var a = x / x
+    
+}
+console.timeEnd('Timer1');
+
+document.write('//<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
+
+console.info('PROFILE IN CONSOOLE  => CREATES CHART OF CODE, to optimise!!!');
+console.profile('1');
+console.time('time2');
+for (let x = 0; x < 20000000; x++) {
+    var a = x / x
+    
+}
+console.timeEnd('time2');
+console.profileEnd('1');
 
 
+
+
+
+
+document.write('//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++');
 
 
 
