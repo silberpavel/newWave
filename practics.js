@@ -182,6 +182,7 @@ document.write('<br><h2>        ===============        Рекурсия         
 
 
 
+    document.write('<br><h2>        ===============        STACK TRACE          ===============        </h2><br>');
 
 
 
