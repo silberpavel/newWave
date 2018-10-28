@@ -43,7 +43,7 @@ window.onload = function(){
         var what = document.createElement('div');
         what.innerText ='Where is the highest mountain on Earth?';
 
-        where.insertBefore(what, list[0]);
+        where.insertBefore(what, list[1]);
 
     }
 
