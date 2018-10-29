@@ -190,4 +190,50 @@ document.write('<br><h2>        ===============        Рекурсия         
 document.write('<br>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>');
 
 
+
+console.log('------------------    Objects   --------------------');
+
+
+var obj = {
+    ItalianAss: 'bitch',
+    AnalSex: 'lubrication',
+    otherAss: 'fuck'
+}
+
+for (var prop in obj) {
+    console.log(obj[prop]);
+}
+console.log(obj);
+delete obj.otherAss;
+console.log(obj);
+
+
+var exists = ('ItalianAss' in obj);
+// obj.hasOwnProperrty['AnalSex']
+console.log(exists);
+
+
+
+var keys = Object.keys(obj); 
+console.log(keys); // ["ItalianAss", "AnalSex"]
+
+for (let i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    console.log(key, obj[key]);  // prop value
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
