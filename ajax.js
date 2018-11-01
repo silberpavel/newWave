@@ -60,7 +60,7 @@ window.onload = () => {
         });
     }
 
-
+    // Chain of promises!!!
 
     reqBtn.addEventListener('click', function () {
         loadFile('https://jsonplaceholder.typicode.com/todos/1')
